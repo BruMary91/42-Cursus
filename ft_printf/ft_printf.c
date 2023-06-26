@@ -6,7 +6,7 @@
 /*   By: mbrunett <mbrunett@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/26 09:53:54 by mbrunett          #+#    #+#             */
-/*   Updated: 2023/06/23 11:27:06 by mbrunett         ###   ########.fr       */
+/*   Updated: 2023/06/26 10:25:02 by mbrunett         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	printf_flag(va_list args, const char type)
 	else if (type == 'c')
 		len += ft_putchar(va_arg(args, int));
 	else if (type == 'p')
-		len += ft_putptr(va_arg(args, uintptr_t));
+		len += ft_putptr(va_arg(args, unsigned long long));
 	else if (type == 'd' || type == 'i')
 		len += ft_putnbr(va_arg(args, int));
 	else if (type == 'u')

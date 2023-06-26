@@ -6,7 +6,7 @@
 /*   By: mbrunett <mbrunett@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/26 09:59:21 by mbrunett          #+#    #+#             */
-/*   Updated: 2023/06/23 12:31:15 by mbrunett         ###   ########.fr       */
+/*   Updated: 2023/06/26 10:24:48 by mbrunett         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define FT_PRINTF_H
 
 # include <stdarg.h>
-# include <stdbool.h>
 # include <stdlib.h>
 # include <stdio.h>
 # include <unistd.h>
@@ -35,8 +34,8 @@ int		hex_lenght(unsigned int nbr);
 void	ft_print_hex(unsigned int nbr, const char type);
 int		puthexnbr(unsigned int nbr, const char type);
 
-int		ft_ptr_lenght(uintptr_t ptr);
-void	ft_print_ptr(uintptr_t ptr);
-int		ft_putptr(uintptr_t ptr);
+int		ft_ptr_lenght(unsigned long long ptr);
+void	ft_print_ptr(unsigned long long ptr);
+int		ft_putptr(unsigned long long ptr);
 
 #endif
